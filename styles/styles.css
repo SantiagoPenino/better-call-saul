@@ -259,8 +259,12 @@ textarea:focus, input:focus{
     list-style: inside;
     padding-bottom: 0.5em;
 }
+
+
+
 /* TABLET */
-@media (min-width: 600px) and (max-width: 1200px){
+
+@media (min-width: 500px) and (max-width: 1200px){
     .header{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -333,7 +337,11 @@ textarea:focus, input:focus{
         padding-left: 5em;
     }
 }
+
+
+
 /* DESKTOP */
+
 @media (min-width:1200px){
     .header{
         display: flex;
