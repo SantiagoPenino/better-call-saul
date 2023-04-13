@@ -264,7 +264,7 @@ textarea:focus, input:focus{
 
 /* TABLET */
 
-@media (min-width: 500px) and (max-width: 1200px){
+@media (min-width: 600px) and (max-width: 1200px){
     .header{
         display: grid;
         grid-template-columns: repeat(2,1fr);
