@@ -33,6 +33,10 @@
     font-family: 'satisfy', cursive;
     font-weight: 100;
 }
+.nav-list{
+    width: 100%;
+    padding-left: 0;
+}
 .nav-list-item{
     text-align: center;
     font-size: 1.2rem;
@@ -274,11 +278,11 @@ textarea:focus, input:focus{
         grid-column: span 2;
     }
     .nav-list{
+        width: 100%;
         display: flex;
         justify-content: space-around;
         padding: 15px 0;
-    }
-    
+    }    
     .header-container{
         display: flex;
         flex-direction: row;
@@ -306,6 +310,13 @@ textarea:focus, input:focus{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         padding: 1rem;
+    }
+    .footer-logo{
+        width: 100%;
+    }
+    .footer-logo img{
+        width: 100%;
+        max-height: 200px;
     }
     .form{
         display: block;
