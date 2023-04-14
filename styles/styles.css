@@ -459,6 +459,10 @@ textarea:focus, input:focus{
     .servicios-img{
         width: 500px;
     }
+    .delitos{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
     .separador-delitos{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -471,6 +475,7 @@ textarea:focus, input:focus{
     .servicios-final{
         display: grid;
         grid-template-columns: 30% 70%;
+        padding: 1em 15%;
     }
     .final-figure{
         display: flex;
@@ -484,8 +489,5 @@ textarea:focus, input:focus{
         display: flex;
         justify-content: center;
         text-align: justify;
-    }
-    .final-img{
-        max-width: 500px;
     }
 }
