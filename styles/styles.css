@@ -62,6 +62,7 @@
     align-items: center;
     color: #ffffff;
     text-shadow: 2px 2px 2px black;
+    justify-content: center;
 }
 .principal{
     width: 100%;
@@ -249,21 +250,47 @@ textarea:focus, input:focus{
     padding: 1em;
 }
 .separador-title h4{
+    display: flex;
+    justify-content: center;
     font-size: 3rem;
     padding-bottom: 0.3em;
 }
 .separador-title h5{
+    display: flex;
+    justify-content: center;
+    text-align: center;
     font-size: 2rem;
 }
 .separador-list{
+    width: 100%;
     padding-top: 1em;
     padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .separador-list li{
     list-style: inside;
     padding-bottom: 0.5em;
 }
-
+.servicios-final{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+}
+.servicios-final h3{
+    text-align: center;
+    padding-top: .5rem;
+}
+.servicios-final p{
+    text-align: justify;
+    padding: .5rem 0;
+}
+.final-img{
+    width: 100%;
+    object-fit: cover;
+}
 
 
 /* TABLET */
@@ -294,7 +321,6 @@ textarea:focus, input:focus{
     }
     .slide{
         justify-content: center;
-        align-items: center;
     }
     .principal{
         display: grid;
@@ -344,8 +370,29 @@ textarea:focus, input:focus{
         grid-template-columns: repeat(2,1fr);
     }
     .separador-title{
-        margin: auto;
-        padding-left: 5em;
+        width: 100%;
+    }
+    .separador-title h4{
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+    .separador-title h5{
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+    .servicios-final{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .final-figure{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .final-article{
+        padding: 1rem;
     }
 }
 
@@ -420,5 +467,25 @@ textarea:focus, input:focus{
         margin: auto;
         padding-left: 5em;
         padding-right: 3em;
+    }
+    .servicios-final{
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    .final-figure{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .final-article{
+        padding: 1rem;
+    }
+    .final-article h3, p {
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+    }
+    .final-img{
+        max-width: 500px;
     }
 }
