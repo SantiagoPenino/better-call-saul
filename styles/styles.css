@@ -13,6 +13,8 @@
     padding: 1em;
     font-size: 1rem;
     box-shadow: 0 2px 1px;
+    display: flex;
+    justify-content: space-between;
 }
 .header-container{
     display: flex;
@@ -20,8 +22,12 @@
     align-items: center;
     flex-direction: column;
 }
+.header-container h1 {
+    font-size: 1.5rem;
+    margin: auto;
+}
 .header-container img{
-    height: 80px;
+    height: 50px;
 }
 .header-container span{
     color: #ff2e2f;
@@ -34,9 +40,30 @@
     font-family: 'satisfy', cursive;
     font-weight: 100;
 }
+.nav__input:checked + .nav-list{
+    clip-path: circle(100% at center);
+}
+.nav__input{
+    display: none;
+}
+.nav__label{
+    display:block;
+    cursor: pointer;
+}
 .nav-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 100%;
     padding-left: 0;
+    align-items: center;
+    clip-path: circle(0 at center) ;
+    transition: clip-path 1s ease-in-out ;
+    position: fixed;
+    top: 80px;
+    bottom: -20px;
+    background-color: rgb(20, 20, 20);
+    left: 0;
 }
 .nav-list-item{
     text-align: center;
@@ -48,6 +75,7 @@
 }
 .nav-list-item a{
     color:white;
+    text-decoration: none;
 }
 .banner{
     width: 100%;
@@ -165,10 +193,11 @@ footer{
 }
 .title-contacto{
     text-align: center;
+    padding: 1rem;
 }
 .title-contacto h2{
-    font-size: 1.2rem;
-    padding: 1em;
+    font-size: 1.5rem;
+    margin: auto;
 }
 .title-contacto h1{
     padding-top: 1em;
@@ -356,28 +385,9 @@ padding: 0 1rem;
 /* TABLET */
 
 @media (min-width: 600px) and (max-width: 1200px){
-    .header{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: minmax(80px,5vh)60px;
-    }
-    .nav{
-        grid-column: span 2;
-    }
-    .nav-list{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        padding: 15px 0;
-    }    
-    .header-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+    .header-container h1 {
         font-size: 2rem;
-    }
-    .header-container h1{
-        font-size: 2rem;
+        margin: auto;
     }
     .banner{
         justify-content: center;
@@ -488,11 +498,27 @@ padding: 0 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 20px;
+        padding: .3rem;
+    }
+    .header-container img{
+        height: 60px;
+    }
+    .header-container h1{
+        font-size: 2rem;
+        margin: auto;
+    }
+    .nav__input, .nav__label {
+        display: none;
     }
     .nav-list{
+        clip-path: none;
         display: flex;
+        flex-direction: row;
+        justify-content: center;
         gap: 20px;
+        position: unset;
+        margin: auto;
+        padding-right: 1rem;
     }
     .nav-list-item:hover{
         transform: scale(1.1);       
