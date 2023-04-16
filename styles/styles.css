@@ -605,4 +605,11 @@ padding: 0 1rem;
         width: 25%;
         height: 25%;
     }
+    .tel-secundario p{
+        text-align: center;
+        align-items: center;
+    }
+    .tel-secundario span{
+        padding: 1rem;
+    }
 }
