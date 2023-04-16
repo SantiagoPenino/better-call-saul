@@ -49,7 +49,7 @@
 .nav-list-item a{
     color:white;
 }
-.slide{
+.banner{
     width: 100%;
     min-height: 300px;
     background-image: url(../img/fondo-slide.jpg);
@@ -328,6 +328,30 @@ padding: 0 1rem;
     color: black;
     font-weight: bold;
 }
+.carousel-div{
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+}
+.carousel-img{
+    height: 400px;
+    object-fit: cover;
+}
+.aboutus{
+    padding: 2rem;
+}
+.aboutus-title{
+    text-align: center;
+    font-size: 2rem;
+}
+.aboutus-text{
+    line-height: 2rem;
+    text-align: justify;
+}
+.aboutus-logo{
+    display: none;
+}
+
 
 /* TABLET */
 
@@ -355,7 +379,7 @@ padding: 0 1rem;
     .header-container h1{
         font-size: 2rem;
     }
-    .slide{
+    .banner{
         justify-content: center;
     }
     .principal{
@@ -447,6 +471,12 @@ padding: 0 1rem;
     .news-article{
         box-shadow: 0 2px 1px;
     }
+    .carousel-img{
+        height: 600px;
+    }
+    .aboutus-logo{
+        display: none;
+    }
 }
 
 
@@ -467,7 +497,7 @@ padding: 0 1rem;
     .nav-list-item:hover{
         transform: scale(1.1);       
     }
-    .slide{
+    .banner{
         height: 400px;
         justify-content: center;
         align-items: center;
@@ -551,5 +581,28 @@ padding: 0 1rem;
         display: grid;
         grid-template-columns: repeat(4,1fr);
         gap: 1rem;
+    }
+    .carousel-div{
+        width: 70%;
+    }
+    .carousel-img{
+        height: 600px;
+    }
+    .aboutus{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .aboutus-title{
+        font-size: 5rem;
+    }
+    .aboutus-title-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutus-logo{
+        width: 25%;
+        height: 25%;
     }
 }
