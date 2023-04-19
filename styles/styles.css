@@ -21,6 +21,7 @@ main{
     position: fixed;
     top: 0;
     width: 100%;
+    align-items: center;
 }
 .header-container{
     display: flex;
