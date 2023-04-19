@@ -7,6 +7,9 @@
     text-decoration: none;
     list-style: none;
 }
+main{
+    margin-top: 82px;
+}
 /* HEADER */
 .header{
     background-color: rgb(20, 20, 20);
@@ -15,7 +18,8 @@
     box-shadow: 0 2px 1px;
     display: flex;
     justify-content: space-between;
-    /* position: fixed; */
+    position: fixed;
+    top: 0;
     width: 100%;
 }
 .header-container{
@@ -496,6 +500,9 @@ padding: 0 1rem;
 /* DESKTOP */
 
 @media (min-width:1200px){
+    main{
+        margin-top: 70px;
+    }
     .header{
         display: flex;
         justify-content: space-between;
