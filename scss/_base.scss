@@ -8,6 +8,11 @@ $color3:#f8f500;
     align-items: center;
 }
 
+@mixin grid2-1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
 @mixin background-default{
     background-repeat: no-repeat;
     background-position: center;

@@ -9,6 +9,12 @@
     top: 0;
     width: 100%;
     align-items: center;
+    @include desktop(){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .3em;
+    }
     &__container{
         @include flex-center();
         flex-direction: column;
@@ -16,10 +22,21 @@
         h1{
             font-size: 1.5rem;
             margin: auto;
+            @include tablet(){
+                font-size: 2rem;
+                margin: auto;
+            }
+            @include desktop(){
+                font-size: 2rem;
+                margin: auto;
+            }
         }
         
         img{
             height: 50px;
+            @include desktop(){
+                height: 60px;
+            }
         }
 
         span{
@@ -36,36 +53,54 @@
     }
 }
 
-.nav__input{
-    display: none;
-    &:checked+.nav__list{
+.nav{
+    &__input{
+        display: none;
+        &:checked + .nav__list{
         clip-path: circle(100% at center);
+        }
     }
-}
+    &__label{
+        display: block;
+        cursor: pointer;
+        @include desktop(){
+            display: none;
+        }
 
-.nav__label{
-    display: block;
-    cursor: pointer;
-}
-
-.nav__list{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 100%;
-    padding-left: 0;
-    align-items: center;
-    clip-path: circle(0 at center);
-    transition: clip-path 1s ease-in-out;
-    position: fixed;
-    top:80px;
-    bottom: -20px;
-    left: 0;
-    background-color: color1;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        padding-left: 0;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+        position: fixed;
+        top:80px;
+        bottom: -20px;
+        left: 0;
+        background-color: $color1;
+        @include desktop(){
+            clip-path: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+            position: unset;
+            margin: auto;
+            padding-right: 1em;
+        }
     &-item{
         text-align: center;
         font-size: 1.2rem;
         padding: .3em;
+        &:hover{
+            @include desktop(){
+                transform: scale(1.1);
+            }
+        }
         a{
             color: white;
             text-decoration: none;
@@ -75,4 +110,4 @@
         }
     }
 }
-
+}

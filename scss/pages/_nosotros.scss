@@ -3,17 +3,38 @@
         width: 100%;
         margin: auto;
         padding: 1em;
+        @include desktop(){
+            width: 70%;
+        }
     }
     &__img{
         height: 400px;
         object-fit: cover;
+        @include tablet(){
+            height: 600px;
+        }
+        @include desktop(){
+            height: 600px;
+        }
     }
 }
 .aboutus{
     padding: 2em;
+    @include desktop(){
+        @include grid2-1();
+    }
     &__title{
         text-align: center;
         font-size: 2em;
+        @include desktop(){
+            font-size: 5rem;
+        }
+        div{
+            @include desktop(){
+                @include flex-center();
+                flex-direction: column;
+            }
+        }
     }
     &__text{
         line-height: 2em;
@@ -21,5 +42,9 @@
     }
     &__logo{
         display: none;
+        @include desktop(){
+            width: 25%;
+            height: 25%;
+        }
     }
 }
