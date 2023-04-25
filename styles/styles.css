@@ -16,6 +16,11 @@ a {
 main {
   margin-top: 82px;
 }
+@media (min-width: 1200px) {
+  main {
+    margin-top: 70px;
+  }
+}
 
 .header {
   background-color: #141414;
@@ -28,6 +33,7 @@ main {
   top: 0;
   width: 100%;
   align-items: center;
+  z-index: 999;
 }
 @media (min-width: 1200px) {
   .header {
@@ -668,15 +674,15 @@ footer {
   padding: 1em;
 }
 
-.tittle__contacto {
+.title__contacto {
   text-align: center;
   padding: 1em;
 }
-.tittle__contacto h1 {
+.title__contacto h1 {
   padding-top: 1em;
   text-transform: uppercase;
 }
-.tittle__contacto h2 {
+.title__contacto h2 {
   font-size: 1.5rem;
   margin: auto;
 }

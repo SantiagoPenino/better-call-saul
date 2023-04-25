@@ -1,8 +1,7 @@
 footer{
     background-color: $color1;
     @include tablet(){
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
+        @include grid2-1();
         padding: 1em;
     }
     @include desktop(){

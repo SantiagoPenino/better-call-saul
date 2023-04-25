@@ -46,6 +46,9 @@ a{
 
 main{
     margin-top: 82px;
+    @include desktop(){
+        margin-top:70px;
+    }
 }
  
 
