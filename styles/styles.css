@@ -2,6 +2,170 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  margin-top: 82px;
+}
+
+.header {
+  background-color: #141414;
+  padding: 1em;
+  font-size: 1rem;
+  box-shadow: 0 2px 1px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  align-items: center;
+}
+.header__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header__container h1 {
+  font-size: 1.5rem;
+  margin: auto;
+}
+.header__container img {
+  height: 50px;
+}
+.header__container span {
+  color: #ff2e2f;
+  font-family: "satisfy", cursive;
+  font-weight: 100;
+}
+.header__title {
+  color: #f8f500;
+  font-size: 1.5rem;
+  font-family: "satisfy", cursive;
+  font-weight: 100;
+}
+
+.nav__input {
+  display: none;
+}
+.nav__input:checked + .nav__list {
+  clip-path: circle(100% at center);
+}
+
+.nav__label {
+  display: block;
+  cursor: pointer;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-left: 0;
+  align-items: center;
+  clip-path: circle(0 at center);
+  transition: clip-path 1s ease-in-out;
+  position: fixed;
+  top: 80px;
+  bottom: -20px;
+  left: 0;
+  background-color: color1;
+}
+.nav__list-item {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0.3em;
+}
+.nav__list-item a {
+  color: white;
+  text-decoration: none;
+}
+.nav__list-item a:hover {
+  color: #ff2e2f;
+}
+
+.banner {
+  width: 100%;
+  min-height: 300px;
+  background-image: url(../../img/fondo-slide.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.principal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.article__principal {
+  padding: 1em 0.5em;
+  width: 100%;
+}
+.article__principal figure {
+  text-align: center;
+  flex-wrap: wrap;
+}
+.article__principal h3 {
+  display: flex;
+  justify-content: center;
+}
+.article__principal p {
+  text-align: center;
+}
+
+.article__img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.tel__fondo {
+  height: 400px;
+  background-image: url(../../img/fondo-tel.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tel__secundario {
+  background-color: rgba(32, 32, 32, 0.8);
+  width: 90%;
+  height: 90%;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tel__secundario span {
+  font-size: 4rem;
+  color: #ff2e2f;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

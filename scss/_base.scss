@@ -1,13 +1,48 @@
-$color1:red;
-$color2:blue;
-$color3:green;
+$color1:#141414;
+$color2:#ff2e2f;
+$color3:#f8f500;
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin background-default{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin tablet{
+    @media(min-width: 600px) and (max-width:1200px){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media(min-width:1200px){
+        @content;
+    }
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
 }
 
+main{
+    margin-top: 82px;
+}
+ 
 
 
 
