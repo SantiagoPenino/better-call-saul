@@ -1,0 +1,25 @@
+.carousel{
+    &__div{
+        width: 100%;
+        margin: auto;
+        padding: 1em;
+    }
+    &__img{
+        height: 400px;
+        object-fit: cover;
+    }
+}
+.aboutus{
+    padding: 2em;
+    &__title{
+        text-align: center;
+        font-size: 2em;
+    }
+    &__text{
+        line-height: 2em;
+        text-align: justify;
+    }
+    &__logo{
+        display: none;
+    }
+}
