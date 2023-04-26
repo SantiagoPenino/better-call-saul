@@ -148,6 +148,7 @@ main {
 footer {
   background-color: #141414;
 }
+
 @media (min-width: 600px) and (max-width: 1200px) {
   .footer {
     display: grid;
@@ -159,7 +160,7 @@ footer {
   .footer {
     padding: 1em;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
