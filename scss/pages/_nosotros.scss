@@ -22,6 +22,7 @@
     padding: 2em;
     @include desktop(){
         @include grid2-1();
+        align-items: center;
     }
     &__title{
         text-align: center;
