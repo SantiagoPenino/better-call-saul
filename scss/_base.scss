@@ -7,7 +7,6 @@ $color3:#f8f500;
     justify-content: center;
     align-items: center;
 }
-
 @mixin grid2-1{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
