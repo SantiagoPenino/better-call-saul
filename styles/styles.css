@@ -238,19 +238,30 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation-name: banner;
+  animation-duration: 1s;
+  animation-timing-function: linear;
 }
-@media (min-width: 600px) and (max-width: 1200px) {
-  .banner {
-    justify-content: center;
+@keyframes banner {
+  0% {
+    transform: translateY(-1000px);
   }
-}
-@media (min-width: 1200px) {
-  .banner {
-    height: 400px;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  @media (min-width: 600px) and (max-width: 1200px) {
+    .banner {
+      justify-content: center;
+    }
+  }
+  @media (min-width: 1200px) {
+    .banner {
+      height: 400px;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation-name: banner;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+    }
   }
 }
 
@@ -342,6 +353,15 @@ footer {
 @media (min-width: 1200px) {
   .servicios__img {
     width: 500px;
+  }
+}
+.servicios__img-div {
+  animation-name: img-animation;
+  animation-duration: 1s;
+}
+@keyframes img-animation {
+  0% {
+    transform: translateX(-1000px);
   }
 }
 @media (min-width: 600px) and (max-width: 1200px) {
@@ -657,6 +677,7 @@ footer {
 .news__title {
   text-align: center;
   padding: 1em 0;
+  font-size: 1.5em;
 }
 .news__text {
   padding: 0 1em;

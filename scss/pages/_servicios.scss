@@ -6,12 +6,19 @@
             width: 500px;
         }
         &-div{
+            animation-name: img-animation;
+            animation-duration: 1s;
+            @keyframes img-animation {
+                0%{
+                    transform: translateX(-1000px);
+                }
+            }
             @include tablet(){
                 @include flex-center();
             }
             @include desktop(){
                 @include flex-center();
-            }
+                }
         }
     }
     &__principal{
