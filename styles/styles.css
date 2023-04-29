@@ -226,7 +226,7 @@ footer {
 .banner {
   width: 100%;
   min-height: 300px;
-  background-image: url(../../img/fondo-slide.jpg);
+  background-image: url(../img/fondo-slide.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -246,22 +246,22 @@ footer {
   0% {
     transform: translateY(-1000px);
   }
-  @media (min-width: 600px) and (max-width: 1200px) {
-    .banner {
-      justify-content: center;
-    }
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  .banner {
+    justify-content: center;
   }
-  @media (min-width: 1200px) {
-    .banner {
-      height: 400px;
-      font-size: 2rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      animation-name: banner;
-      animation-duration: 1s;
-      animation-timing-function: linear;
-    }
+}
+@media (min-width: 1200px) {
+  .banner {
+    height: 400px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: banner;
+    animation-duration: 1s;
+    animation-timing-function: linear;
   }
 }
 
