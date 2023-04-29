@@ -717,15 +717,16 @@ footer {
 .form__contacto input {
   padding: 1em;
   margin: 20px 0;
-  box-shadow: 0 0 5px;
+  border: 0;
+  border-bottom: 1px solid black;
 }
 .form__contacto input:focus {
   outline: none;
 }
 .form__contacto textarea {
+  border: 1px solid black;
   padding: 1em;
   margin: 20px 0;
-  box-shadow: 0 0 5px;
   resize: none;
 }
 .form__contacto textarea:focus {
