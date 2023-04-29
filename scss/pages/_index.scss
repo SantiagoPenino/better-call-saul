@@ -16,6 +16,7 @@
         0%{ 
             transform: translateY(-1000px);
         }
+    }
     @include tablet(){
         justify-content: center;
     }
@@ -29,7 +30,6 @@
         
             
         }
-    }
 }
 
 .principal{
