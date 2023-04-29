@@ -72,7 +72,7 @@
 }
 .tel__fondo{
     height: 400px;
-    background-image: url(../../img/fondo-tel.jpg);
+    background-image: url(../img/fondo-tel.jpg);
     @include background-default();
     @include flex-center();
 }

@@ -308,7 +308,7 @@ footer {
 
 .tel__fondo {
   height: 400px;
-  background-image: url(../../img/fondo-tel.jpg);
+  background-image: url(../img/fondo-tel.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
