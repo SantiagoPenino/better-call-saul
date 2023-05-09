@@ -16,7 +16,7 @@ a {
 main {
   margin-top: 82px;
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   main {
     margin-top: 70px;
   }
@@ -35,7 +35,7 @@ main {
   align-items: center;
   z-index: 999;
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .header {
     display: flex;
     justify-content: space-between;
@@ -53,13 +53,13 @@ main {
   font-size: 1.5rem;
   margin: auto;
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .header__container h1 {
     font-size: 2rem;
     margin: auto;
   }
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .header__container h1 {
     font-size: 2rem;
     margin: auto;
@@ -68,7 +68,7 @@ main {
 .header__container img {
   height: 50px;
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .header__container img {
     height: 60px;
   }
@@ -95,7 +95,7 @@ main {
   display: block;
   cursor: pointer;
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .nav__label {
     display: none;
   }
@@ -115,7 +115,7 @@ main {
   left: 0;
   background-color: #141414;
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .nav__list {
     clip-path: none;
     display: flex;
@@ -132,7 +132,7 @@ main {
   font-size: 1.2rem;
   padding: 0.3em;
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .nav__list-item:hover {
     transform: scale(1.1);
   }
@@ -149,14 +149,14 @@ footer {
   background-color: #141414;
 }
 
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 1em;
   }
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .footer {
     padding: 1em;
     display: grid;
@@ -169,7 +169,7 @@ footer {
   justify-content: center;
   padding: 1em;
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .footer__logo {
     width: 100%;
   }
@@ -178,7 +178,7 @@ footer {
   width: 50%;
   max-width: 200px;
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .footer__logo img {
     width: 100%;
     max-height: 200px;
@@ -247,12 +247,12 @@ footer {
     transform: translateY(-1000px);
   }
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .banner {
     justify-content: center;
   }
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .banner {
     height: 400px;
     font-size: 2rem;
@@ -270,14 +270,14 @@ footer {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .principal {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
   }
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .principal {
     width: 100%;
     display: grid;
@@ -328,7 +328,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .tel__secundario p {
     text-align: center;
     align-items: center;
@@ -340,7 +340,7 @@ footer {
   display: flex;
   justify-content: center;
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .tel__secundario span {
     padding: 1em;
   }
@@ -350,7 +350,7 @@ footer {
   object-fit: cover;
   width: 100%;
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .servicios__img {
     width: 500px;
   }
@@ -364,14 +364,14 @@ footer {
     transform: translateX(-1000px);
   }
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .servicios__img-div {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .servicios__img-div {
     display: flex;
     justify-content: center;
@@ -382,13 +382,19 @@ footer {
   line-height: 1.5rem;
   padding: 1em;
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .servicios__principal {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 1200px) {
+@media (orientation: portrait) {
+  .servicios__principal {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (width >= 1024px) {
   .servicios__principal {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -397,12 +403,12 @@ footer {
 .servicios__principal div {
   padding: 1em 0;
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .servicios__principal div {
     padding: 1em;
   }
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .servicios__principal div {
     padding: 1em;
   }
@@ -412,12 +418,12 @@ footer {
   padding-bottom: 0.5em;
   text-align: center;
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .servicios__title {
     text-align: center;
   }
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .servicios__title {
     text-align: center;
   }
@@ -432,13 +438,13 @@ footer {
   flex-direction: column;
   padding: 0.5em;
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .servicios__final {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .servicios__final {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -454,7 +460,7 @@ footer {
   padding: 0.5em 0;
 }
 
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .delitos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -462,7 +468,7 @@ footer {
     padding-top: 2em;
   }
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .delitos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -482,24 +488,24 @@ footer {
   flex-direction: column;
   padding: 1em;
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .separador__delitos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .separador__delitos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .separador__title {
     width: 100%;
   }
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .separador__title {
     margin: auto;
     padding-left: 5em;
@@ -512,7 +518,7 @@ footer {
   font-size: 3rem;
   padding-bottom: 0.3em;
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .separador__title h4 {
     padding-top: 2em;
   }
@@ -523,7 +529,7 @@ footer {
   text-align: center;
   font-size: 2rem;
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .separador__title h5 {
     padding-top: 2em;
   }
@@ -545,31 +551,31 @@ footer {
   width: 100%;
   object-fit: cover;
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .final__figure {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .final__figure {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .final__article {
     padding: 1em;
   }
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .final__article {
     padding: 1em;
   }
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .final__article h3, .final__article p {
     display: flex;
     justify-content: center;
@@ -582,7 +588,7 @@ footer {
   margin: auto;
   padding: 1em;
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .carousel__div {
     width: 70%;
   }
@@ -591,12 +597,12 @@ footer {
   height: 400px;
   object-fit: cover;
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .carousel__img {
     height: 600px;
   }
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .carousel__img {
     height: 600px;
   }
@@ -605,7 +611,7 @@ footer {
 .aboutus {
   padding: 2em;
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .aboutus {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -616,12 +622,12 @@ footer {
   text-align: center;
   font-size: 2em;
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .aboutus__title {
     font-size: 5rem;
   }
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .aboutus__title div {
     display: flex;
     justify-content: center;
@@ -636,7 +642,7 @@ footer {
 .aboutus__logo {
   display: none;
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .aboutus__logo {
     width: 25%;
     height: 25%;
@@ -648,14 +654,14 @@ footer {
   flex-direction: column;
   padding: 1em;
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .news {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
   }
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .news {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -670,7 +676,7 @@ footer {
   flex-wrap: wrap;
   box-shadow: 0 2px 1px;
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .news__article {
     box-shadow: 0 2px 1px;
   }
@@ -717,14 +723,14 @@ footer {
   padding: 1em 3em;
   width: 100%;
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .form {
     display: block;
     margin: auto;
     max-width: 800px;
   }
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .form {
     display: block;
     margin: auto;
@@ -774,13 +780,13 @@ footer {
   display: flex;
   justify-content: center;
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (width >= 600px) and (width < 1024px) {
   .mapa iframe {
     width: 400px;
     height: 400px;
   }
 }
-@media (min-width: 1200px) {
+@media (width >= 1024px) {
   .mapa iframe {
     width: 500px;
     height: 500px;

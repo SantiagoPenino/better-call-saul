@@ -27,6 +27,10 @@
         @include tablet(){
             @include grid2-1();
         }
+        @media (orientation:portrait){
+            display: flex;
+            flex-direction: column;
+        }
         @include desktop(){
             @include grid2-1();
         }
